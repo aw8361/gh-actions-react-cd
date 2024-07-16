@@ -1,0 +1,15 @@
+[theme="light"] {
+  --color-background: #ffffff;
+  --color-text: #000000;
+}
+
+[theme="dark"] {
+  --color-background: #0d1117;
+  --color-text: #ffffff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  margin: 0;
+}
