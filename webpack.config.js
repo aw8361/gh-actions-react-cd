@@ -33,6 +33,10 @@ const config = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(png|svg|jpe?g|ico|gif)$/i,
+        type: "asset/resource",
+      },
     ],
   },
 };
