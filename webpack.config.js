@@ -17,7 +17,10 @@ const config = {
     static: { directory: join(__dirname, "public/") },
     open: true,
   },
-  plugins: [new HtmlWebpackPlugin({ template: "./public/index.html" }), new ReactRefreshPlugin()],
+  plugins: [
+    new HtmlWebpackPlugin({ template: "./public/index.html", favicon: "./public/favicon.ico" }),
+    new ReactRefreshPlugin(),
+  ],
   optimization: {
     runtimeChunk: "single",
   },

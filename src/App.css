@@ -8,6 +8,10 @@
   justify-content: center;
 }
 
+img {
+  height: 40vh;
+}
+
 h1 {
   user-select: none;
 }
