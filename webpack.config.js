@@ -1,3 +1,4 @@
+import ReactRefreshPlugin from "@pmmmwh/react-refresh-webpack-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import { dirname, join, resolve } from "path";
 import { fileURLToPath } from "url";
@@ -16,7 +17,7 @@ const config = {
     static: { directory: join(__dirname, "public/") },
     open: true,
   },
-  plugins: [new HtmlWebpackPlugin({ template: "./public/index.html" })],
+  plugins: [new HtmlWebpackPlugin({ template: "./public/index.html" }), new ReactRefreshPlugin()],
   optimization: {
     runtimeChunk: "single",
   },
