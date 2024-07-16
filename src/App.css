@@ -6,6 +6,9 @@
   flex-direction: column;
   height: 100vh;
   justify-content: center;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
 }
 
 img {
